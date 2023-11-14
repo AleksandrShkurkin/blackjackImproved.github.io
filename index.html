@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Lr8</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="signIn" class="first">
+        <div id="info" class="rules">
+            <div class="buttonInfo">
+                <button id="infoButton" class="infoButton">
+                </button>
+            </div>
+        </div>
+        <div id="logoname" class="logoname">
+            BLACKJACK
+        </div>
+        <div id="signInDiv" class="signIn">
+            <form id="formSignIn" name="signIn" class="signIn">
+                <lable id="enter" for="username" class="enter"> Enter your username: </lable> <br> <br>
+                <input type="text" id="username" name="username" class="signIn" autocomplete="off"> <br> <br>
+                <input type="button" id="complete" name="complete" value="Game start" class="button">
+            </form>
+        </div>
+    </div>
+    <div class="rulesList" id="rulesList">
+        <button class="closeInfo" id="closeInfo"></button>
+        <div class="rulesName">
+            RULES:
+        </div>
+        <div class="rulesText">
+            The goal of the blackjack is to win against a dealer by getting a number of points on the cards
+            to be as close (not more) than 21. If you have 21 points, you immediately win. Dealer can`t
+            get more cards if his points are more or equal to 17, so use this to your advantage!
+        </div>
+        <div class="cardsExample">
+            <div class="cardHolder"><img src="img/cards/6Hearts.jpg" alt="6" class="cards"></div>
+            <div class="cardHolder"><img src="img/cards/7Hearts.jpg" alt="7" class="cards"></div>
+            <div class="cardHolder"><img src="img/cards/8Hearts.jpg" alt="8" class="cards"></div>
+            <div class="cardHolder"><img src="img/cards/9Hearts.jpg" alt="9" class="cards"></div>
+            <div class="cardHolder"><img src="img/cards/10Hearts.jpg" alt="10" class="cards"></div>
+            <div class="cardHolder"><img src="img/cards/JHearts.jpg" alt="Jack" class="cards"></div>
+            <div class="cardHolder"><img src="img/cards/QHearts.jpg" alt="Queen" class="cards"></div>
+            <div class="cardHolder"><img src="img/cards/KHearts.jpg" alt="King" class="cards"></div>
+            <div class="cardHolder"><img src="img/cards/AceHearts.jpg" alt="Ace" class="cards"></div>
+        </div>
+        <div class="cardsValues">
+            <div class="cardValueText">6 points</div>
+            <div class="cardValueText">7 points</div>
+            <div class="cardValueText">8 points</div>
+            <div class="cardValueText">9 points</div>
+            <div class="cardValueText">10 points</div>
+            <div class="cardValueText">2 points</div>
+            <div class="cardValueText">3 points</div>
+            <div class="cardValueText">4 points</div>
+            <div class="cardValueText">11 points</div>
+        </div>
+    </div>
+    <div class="gameDiv" id="gameDiv">
+        <button class="exit" id="exit"></button>
+        <div class="scoreDealer" id="scoreDealer"></div>
+        <div class="dealer">
+            <div class="dealerName" id="dealerName">
+                Dealer
+            </div>
+            <div class="dealerPoints" id="dealerPoints">
+
+            </div>
+            <div class="dealerGame" id="dealerGame">
+                <img src="img/cards/BackSide.png" alt="Mystery" class="cardGame" id="card1S">
+                <img src="img/cards/BackSide.png" alt="Mystery" class="cardGame" id="card2S">
+            </div>
+        </div>
+        <div class="scorePlayer" id="scorePlayer"></div>
+        <div class="player">
+            <div class="playerGame" id="playerGame">
+                <img src="img/cards/BackSide.png" alt="Mystery" class="cardGame" id="card3S">
+                <img src="img/cards/BackSide.png" alt="Mystery" class="cardGame" id="card4S">
+            </div>
+            <div class="actions" id="actions">
+                <div class="startGame" id="startGameDiv">
+                    <button class="startGame" id="startGame">Start new game</button>
+                </div>
+                <div class="hit" id="hitDiv">
+                    <button class="hit" id="hit">Hit</button>
+                </div>
+                <div class="hold" id="holdDiv">
+                    <button class="hold" id="hold">Hold</button>
+                </div>
+                <div class="playerName" id="playerName">
+                </div>
+                <div class="playerPoints" id="playerPoints">
+
+                </div>
+            </div>
+        </div>
+        <div class="logOff" id="logOff">
+            <div class="logOffText">
+                Do you want to log off?
+            </div>
+            <div class="logOffButtons">
+                <button class="logOffConfYes" id="yes"> Yes </button>
+                <button class="logOffConfNo" id="no"> No </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

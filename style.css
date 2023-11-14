@@ -1,0 +1,619 @@
+﻿html, body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.first {
+    display: flex;
+    flex-wrap: wrap;
+    background: grey;
+    width: 100%;
+    height: 100%;
+}
+
+div.rules {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10%;
+}
+
+div.buttonInfo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95px;
+    height: 100%;
+    min-width: 45px;
+    min-height: 86.3px;
+}
+
+button.infoButton {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/info.png);
+    background-size: 90px 90px;
+    background-color: grey;
+    background-repeat: no-repeat;
+    border: 0px;
+    outline: none;
+}
+
+div.logoname {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+div.signIn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 65%;
+}
+
+lable.enter {
+    display: block;
+    text-align: center;
+    height: 1%;
+}
+
+form.signIn {
+    width: 20%;
+    height: 30%;
+    min-width: 300px;
+    min-height: 288px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+input.signIn {
+    width: 100%;
+    height: 15%;
+    border-radius: 5px;
+    border: 0px;
+    outline: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px
+}
+
+input.button {
+    width: 100%;
+    height: 17%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    background: linear-gradient(to right, lime, red);
+    border: 0px;
+}
+
+div.rulesList {
+    display: none;
+    flex-wrap: wrap;
+    background: green;
+    border: 3px solid brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 80%;
+    min-width: 735px;
+    overflow: auto;
+}
+
+button.closeInfo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5%;
+    height: 10%;
+    background: url(img/closeInfo.png);
+    background-size: 50px 50px;
+    background-color: none;
+    background-repeat: no-repeat;
+    border: 0px;
+    outline: none;
+    min-width: 50px;
+}
+
+div.rulesName {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 60px;
+    min-height: 103px;
+}
+
+div.rulesText {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    min-height: 103px;
+}
+
+div.cardsExample {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+div.cardHolder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    padding: 15px;
+    min-height: 193px;
+}
+
+div.cardsValues {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 70%;
+    min-height: 193px;
+}
+
+img.cards{
+    width: 40%;
+    height: 100%;
+    min-width: 100px;
+}
+
+div.cardValueText {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 45px;
+    width: 100%;
+    height: 40%;
+    padding: 15px;
+    min-height: 193px;
+}
+
+div.gameDiv {
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 99.4%;
+    background: green;
+    border: 3px solid brown;
+}
+
+div.logOff{
+    display: none;
+    flex-direction: column;
+    background: grey;
+    position: absolute;
+    top: 10.5%;
+    right: 0.2%;
+    width: 10%;
+    height: 10%;
+    min-width: 183px;
+}
+
+button.exit {
+    position: absolute;
+    right: 1%;
+    width: 3%;
+    height: 10%;
+    background-image: url(img/exit2.png);
+    background-size: 100px 90px;
+    background-repeat: no-repeat;
+    background-color: green;
+    background-position: center;
+    border: 0px;
+    outline: none;
+    min-width: 55px;
+}
+
+div.logOffText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+div.logOffButtons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button.logOffConfYes {
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 40%;
+    height: 90%;
+    border-radius: 5px;
+    border: 0px;
+    outline: none;
+    background: green;
+}
+
+button.logOffConfNo {
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 40%;
+    height: 90%;
+    border-radius: 5px;
+    border: 0px;
+    outline: none;
+    background: red;
+}
+
+div.dealer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 50%;
+    border-bottom: 1px dashed black;
+}
+
+div.player {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 50%;
+}
+
+div.scoreDealer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 5%;
+    height: 50%;
+    border-bottom: 1px dashed black;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+div.scorePlayer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 5%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+div.dealerName {
+    display: flex;
+    flex-wrap: wrap;
+    width: 53%;
+    height: 15%;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+div.dealerPoints {
+    display: flex;
+    flex-wrap: wrap;
+    width: 47%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+div.playerName {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+div.playerPoints {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+div.dealerGame {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+}
+
+div.playerGame {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+}
+
+div.actions {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 15%;
+}
+
+div.hit {
+    display: none;
+    flex-wrap: wrap;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.hold {
+    display: none;
+    flex-wrap: wrap;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.startGame {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+button.startGame {
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    background: grey;
+    color: white;
+    min-width: 250px;
+}
+
+button.hit {
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    background: grey;
+    color: white;
+    min-width: 220px;
+}
+
+button.hold {
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    background: grey;
+    color: white;
+    min-width: 220px;
+}
+
+img.cardGame{
+    width: 200px;
+    height: 270px;
+    margin: 0px 10px 0px 10px;
+}
+
+@media screen and (max-width: 1569px) {
+    button.hit{
+        width: 60%;
+        min-width: 70px;
+    }
+    button.hold {
+        width: 60%;
+        min-width: 70px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    img.cardGame {
+        width: 150px;
+        height: 220px;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    img.cardGame {
+        width: 120px;
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    div.rulesList {
+        min-width: 370px;
+    }
+    div.rulesText {
+        min-height: 170px;
+    }
+    div.cardValueText {
+        text-align: center;
+    }
+    img.cardGame {
+        width: 90px;
+        height: 160px;
+    }
+    div.playerName{
+        font-size: 28px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    div.hit{
+        width: 30%;
+    }
+    div.hold {
+        width: 30%;
+    }
+    div.playerName {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    div.scoreDealer{
+        font-size: 25px;
+    }
+    div.scorePlayer {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    div.rulesList {
+        min-width: 300px;
+    }
+    div.rulesText {
+        min-height: 220px;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    div.signIn {
+        align-items: center;
+        height: 70%;
+    }
+
+    form.signIn {
+        font-size: 20px;
+        min-width: 290px;
+    }
+
+    input.signIn {
+        height: 12%;
+        font-size: 20px;
+    }
+
+    input.button {
+        height: 15%;
+        font-size: 20px;
+    }
+
+    div.logoname{
+        height: 10%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    div.dealerPoints{
+        display: none;
+    }
+    div.playerPoints{
+        display: none;
+    }
+    div.startGame{
+        width: 65%;
+    }
+    div.playerName{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    img.cardGame{
+        width: 70px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    button.startGame{
+        width: 15%;
+        font-size: 20px;
+        min-width: 150px;
+    }
+    div.playerName {
+        font-size: 20px;
+    }
+}
