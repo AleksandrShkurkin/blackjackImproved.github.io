@@ -75,6 +75,8 @@ buttonSignIn.addEventListener('click', () => {
         dealerPoints.textContent = 'Points: ' + dealerP;
         scoreDealer.textContent = scoreD;
         scorePlayer.textContent = scoreP;
+        startGameDiv.style.display = 'flex';
+        startGame.style.display = 'flex';
     }
     else {
         if (usernameTrimmed.length >= 30) {
@@ -136,6 +138,8 @@ buttonYes.addEventListener('click', () => {
     scoreDealer.textContent = scoreD;
     scorePlayer.textContent = scoreP;
     dealerName.textContent = "Dealer";
+    hitDiv.style.display = 'none';
+    holdDiv.style.display = 'none';
 });
 
 startGame.addEventListener('click', () => {
