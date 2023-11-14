@@ -77,6 +77,8 @@ buttonSignIn.addEventListener('click', () => {
         scorePlayer.textContent = scoreP;
         startGameDiv.style.display = 'flex';
         startGame.style.display = 'flex';
+        hitDiv.style.display = 'none';
+        holdDiv.style.display = 'none';
     }
     else {
         if (usernameTrimmed.length >= 30) {
