@@ -1163,12 +1163,12 @@ hold.addEventListener('click', () => {
                     if (scoreP == 3 || scoreD == 3) {
                         end = true;
                         if (scoreP == 3) {
-                            playerName.textContent = name + " - Won!";
+                            playerName.textContent = usernameTrimmed + " - Won!";
                             dealerName.textContent = 'Dealer - Lost!';
                             
                         }
                         else if (scoreD == 3) {
-                            playerName.textContent = name + " - Lost!";
+                            playerName.textContent = usernameTrimmed + " - Lost!";
                             dealerName.textContent = "Dealer - Won!";
                         }
                     }
@@ -1176,6 +1176,7 @@ hold.addEventListener('click', () => {
                 drawCard();
             }
             else {
+                lose = false;
                 scoreD++;
                 scorePlayer.textContent = scoreP;
                 scoreDealer.textContent = scoreD;
